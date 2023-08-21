@@ -8,7 +8,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:4.1.3'
+        classpath 'com.android.tools.build:gradle:8.1.0'
     }
 }
 
@@ -23,9 +23,10 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 34
 
     defaultConfig {
+        namespace 'com.github.droibit.plugins.flutter.customtabs'
         minSdkVersion 16
     }
     lintOptions {
